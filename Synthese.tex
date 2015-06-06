@@ -28,69 +28,69 @@
 \renewcommand{\labelitemii}{$\diamond$}
 \renewcommand{\labelitemiii}{$\cdot$}
 \begin{Large}\begin{center} 
-   \underline{\textbf{Calcul des probabilités :  Synthèses des formules}} 
+   \underline{\textbf{Calcul des probabilités : Synthèse des formules}} 
 \end{center}\end{Large}
 
 %%%%%
-\section{Séance I: Introduction}
+\section{Séance I : Introduction}
 \begin{itemize}
-	\item \textbf{Évenement}: Un évenement $A$ lié à une expérience aléatoire est un sous ensemble des résultats possibles. Il est souvent défini par une proposition.
-	\item \textbf{Probabilité d'un évenement}: La probabilité d'un évenement $A$ est définie comme: $P(A)=$ nombre de cas favorables$/$nombre de cas possibles
-	\item \textbf{Arbre pondéré}: Un arbre pondéré est un schéma permettant de résumer une expérience aléatoire connaissant des probabilités conditionnelles.
-	\item \textbf{Opérations ensembliste:}
+	\item \textbf{Événement} : Un événement $A$ lié à une expérience aléatoire est un sous-ensemble des résultats possibles. Il est souvent défini par une proposition.
+	\item \textbf{Probabilité d'un événement} : La probabilité d'un événement $A$ est définie comme $P(A)=$ nombre de cas favorables$/$nombre de cas possibles
+	\item \textbf{Arbre pondéré} : Un arbre pondéré est un schéma permettant de résumer une expérience aléatoire en connaissant des probabilités conditionnelles.
+	\item \textbf{Opérations ensemblistes :}
 		\begin{itemize}
-			\item \textbf{Évenements contraires}: $A^C$ l'événement $A$ ne se produit pas.
-			\item \textbf{Réalisation simultanée de deux évenements}: $A \cap B$
-			\item \textbf{Réalisation d'un évenement au moins}: $A \cup B$
-			\item \textbf{Évenements indépendants}: $P(A \cap B) = P(A) P(B)$
-			\item \textbf{Évenements dépendants}: $P(A|B)$ (probabilité de B si A est arrivé)
+			\item \textbf{Événements contraires} : $A^C$ l'événement $A$ ne se produit pas.
+			\item \textbf{Réalisation simultanée de deux événements} : $A \cap B$
+			\item \textbf{Réalisation d'un événement au moins} : $A \cup B$
+			\item \textbf{Événements indépendants} : $P(A \cap B) = P(A) P(B)$
+			\item \textbf{Événements dépendants} : $P(A|B)$ (probabilité de B si A est arrivé)
 			\item $A - B = A \cap B^C$
 			\item $A \oplus B = A \cup B - A \cap B$
 			\item $P(A \cup B) = P(A)+P(B)-P(A \cap B)$
 			\item $P(A \cap B) = P(A)P_A(B)$
 		\end{itemize}
-	\item \textbf{Lois de Morgan}:
+	\item \textbf{Lois de De Morgan} :
 		\begin{itemize}
 			\item $\overline{A} \cap \overline{B} = \overline{A \cup B}$
 			\item $\overline{A} \cup \overline{B} = \overline{A \cap B}$
 		\end{itemize}
-	\item \textbf{Éspérance mathématique (ou moyenne)}: $E(X)=\sum\limits_{i=1}^{n}{x_ip_i}$
-	\item \textbf{Variance}: $V(X)=\sum\limits_{i=1}^{n}{(x_i-\bar{X})^2p_i}$ où $\bar{X} = E(X)$
-	\item \textbf{Écart-type}: $\sigma(X) = \sqrt{V(X)}$
+	\item \textbf{Espérance mathématique (ou moyenne)} : $E(X)=\sum\limits_{i=1}^{n}{x_ip_i}$
+	\item \textbf{Variance} : $V(X)=\sum\limits_{i=1}^{n}{(x_i-\bar{X})^2p_i}$ où $\bar{X} = E(X)$
+	\item \textbf{Écart-type} : $\sigma(X) = \sqrt{V(X)}$
 \end{itemize}
 
 %%%%%
-\section{Séance II: Densité de probabilité}
+\section{Séance II : Densité de probabilité}
 \begin{itemize}
-	\item \textbf{Densité de probabilité}: Une densité de probabilité est une fonction $f$ qui permet de représenter une loi de probabilité sous forme d'intégrale. Elle vérifie deux conditions:
+	\item \textbf{Densité de probabilité} : Une densité de probabilité est une fonction $f$ qui permet de représenter une loi de probabilité sous forme d'intégrale. Elle vérifie deux conditions :
 	\begin{itemize}
 		\item $f(x) \ge 0$
 		\item $\int\limits_{-\infty}^{+\infty}{f(x)dx}=1$
 	\end{itemize}
-	\item \textbf{Fonction de répartition}: Une fonction de répartition $F_X(x)$ d'une variable aléatoire $X$ représente la loi de probabilité de cette variable aléatoire. Elle est définie comme: $F_X(x)=\int\limits_{-\infty}^{x}{f(x)dx}$
+	\item \textbf{Fonction de répartition} : Une fonction de répartition $F_X(x)$ d'une variable aléatoire $X$ représente la loi de probabilité de cette variable aléatoire. Elle est définie comme $F_X(x)=\int\limits_{-\infty}^{x}{f(x)dx}$
 \end{itemize}
 
 %%%%%
-\section{Séance III: Loi de probabilité - Moments}
+\section{Séance III : Loi de probabilité - Moments}
 \begin{itemize}
-	\item Une loi de probabilité est définie par:
+	\item Une loi de probabilité est définie par :
 	\begin{itemize}
 		\item Tout $P_X\{k\} \ge 0$
 		\item $\sum\limits_{k=0}^{n}{P_X\{k\}} = 1$
 	\end{itemize}
 	\newpage
-	\item \textbf{Moment-loi continue ($\mathbb{R}$)}:
+	\item \textbf{Moment-loi continue ($\mathbb{R}$)} :
 	\begin{itemize}
-		\item \textbf{Moment d'ordre r}: $\alpha_r(X) = \int\limits_{\mathbb{R}}{x^rf(x)dx}$
-		\item \textbf{Moment centré d'ordre r}: $\mu_r(X) = \int\limits_{\mathbb{R}}{(x-\bar{X})^rf(x)dx}$
+		\item \textbf{Moment d'ordre r} : $\alpha_r(X) = \int\limits_{\mathbb{R}}{x^rf(x)dx}$
+		\item \textbf{Moment centré d'ordre r} : $\mu_r(X) = \int\limits_{\mathbb{R}}{(x-\bar{X})^rf(x)dx}$
 		\item En particulier, la moyenne $\equiv \bar{X} = \alpha_1$ et la variance $\equiv V=\mu_2$
 		\item \textbf{$\mu_1 = 0$}
 		\item \textbf{$\mu_2 = \sigma^2 = \alpha_2 - \alpha_1^2$}
 		\item \textbf{$\mu_3 = \alpha_3 - 3\alpha_2 \alpha_1 + 2\alpha_1^3$}\\
 	\end{itemize}
-	\item \textbf{Moment factoriel-loi discrète ($\mathbb{Z}$)}:
+	\item \textbf{Moment factoriel-loi discrète ($\mathbb{Z}$)} :
 	\begin{itemize}
-		\item \textbf{Moment factoriel d'ordre r}: $\alpha_{[r]}(X) = \sum\limits_{i = 0}^{n}{\frac{x!}{(x-r)!}P(x)} = E(\frac{X!}{(X-r)!})$
+		\item \textbf{Moment factoriel d'ordre r} : $\alpha_{[r]}(X) = \sum\limits_{i = 0}^{n}{\frac{x!}{(x-r)!}P(x)} = E(\frac{X!}{(X-r)!})$
 		\item \textbf{$\alpha_1 = \alpha_{[1]}$}
 		\item \textbf{$\alpha_2 = \alpha_{[2]} + \alpha_{[1]}$}
 		\item \textbf{$\alpha_3 = \alpha_{[3]} + 3\alpha_{[2]} + \alpha_{[1]}$}
@@ -98,9 +98,9 @@
 \end{itemize}
 
 %%%%%
-\section{Séance IV: Moments-Fonction caractéristique}
+\section{Séance IV : Moments-Fonction caractéristique}
 \begin{itemize}
-	\item \textbf{Fonction caractéristique}: $\phi(t) = \int\limits_{\mathbb{R}}{e^{itx}dp(x)} = \int\limits_{\mathbb{R}}{e^{itx}f(x)dx}$
+	\item \textbf{Fonction caractéristique} : $\phi(t) = \int\limits_{\mathbb{R}}{e^{itx}dp(x)} = \int\limits_{\mathbb{R}}{e^{itx}f(x)dx}$
 	\item \textbf{$|\phi(t)| \le 1$}
 	\item \textbf{$\phi(0) = 1$}
 	\item \textbf{$\phi(t) = 1 + it\alpha_1 + \frac{(it)^2}{2!}\alpha_2 + ... + \frac{(it)^r}{r!}\alpha_r$}
@@ -108,13 +108,13 @@
 \end{itemize}
 
 %%%%%
-\section{Séance V: Sommes de variables aléatoire réelles}
+\section{Séance V : Sommes de variables aléatoires réelles}
 \begin{itemize}
-	\item Soient deux v.a.r $X$ et $Y$ respectivement donné par les densités de probabilité $f_X(k)$ et $f_Y(l)$ et soit $Z = X+Y => z = k+l$, on a alors par le produit de convolution que:
+	\item Soient deux v.a.r. $X$ et $Y$ respectivement données par les densités de probabilité $f_X(k)$ et $f_Y(l)$ et soit $Z = X+Y => z = k+l$, on a alors par le produit de convolution que :
 	\begin{itemize}
-		\item  Pour une densité continue:\\
+		\item Pour une densité continue :\\
 		$f_Z(Z) = \int\limits_{-\infty}^{+\infty}{f_X(k)f_Y(z-k)dk} = \int\limits_{-\infty}^{+\infty}{f_X(z-l)f_Y(l)dl}$
-		\item Pour une densité discrète:\\
+		\item Pour une densité discrète :\\
 		$f_Z(Z) = \sum\limits_{k=-\infty}^{+\infty}{f_X(k)f_Y(z-k)} = \sum\limits_{l=-\infty}^{+\infty}{f_X(z-l)f_Y(l)}$ 
 	\end{itemize}
 	\item Soit $f_X(x) = ae^{-ax}$ alors $\overline{x} = \alpha_1 = \frac{1}{\alpha}$ et $V = \mu_2 = \frac{1}{\alpha^2}$ 
@@ -122,10 +122,10 @@
 
 \newpage
 %%%%%
-\section{Séance VI: Théorème de la limite centrale et loi des grands nombre}
+\section{Séance VI : Théorème de la limite centrale et loi des grands nombres}
 \begin{itemize}
 	\item \textbf{Théorème de la limite centrale} \\
-	Soit $X_i$, $i>1$ une suite de v.a.r:
+	Soit $X_i$, $i>1$ une suite de v.a.r. :
 	\begin{itemize}
 		\item indépendantes
 		\item de même loi
@@ -140,21 +140,21 @@
 	$P(Z_n \le x) \rightarrow \frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{x}{e^{-y^2/2}dy}$ quand $n\rightarrow \infty$\\
 	$Z_n \underset{n\to+\infty}{\longrightarrow} N(0,1)$
 	\end{center}
-	\item \textbf{Loi des grands nombres}: \\
+	\item \textbf{Loi des grands nombres} : \\
 	\begin{itemize}
-		\item \textbf{Loi faible}:\\
-		Soit $X_n$, $n \in \mathbb{N}$, une suite de v.a.r. indépendantes:
+		\item \textbf{Loi faible} :\\
+		Soit $X_n$, $n \in \mathbb{N}$, une suite de v.a.r. indépendantes :
 		\begin{itemize}
 			\item soit de même loi et $E(X_1^2) < \infty$
-			\item soit de lois quelconque et $\frac{1}{n^2}\sum\limits_{i}{\sigma^2(X_i) \rightarrow 0}$ (critère de Markov)
+			\item soit de lois quelconques et $\frac{1}{n^2}\sum\limits_{i}{\sigma^2(X_i) \rightarrow 0}$ (critère de Markov)
 		\end{itemize}
 		Alors\\
 		\begin{center}
 		$\lim\limits_{n\rightarrow \infty}{P(|\frac{1}{n}\sum\limits_{i}{X_i}-E(X_1)|>\varepsilon)} = 0$\\
 		\end{center}
-		Autrement dit, la moyenne arithmètique de $X_n$ converge vers l'espèrence de $X_1$.\\
-		\item \textbf{Loi forte}:\\
-		Soit $X_n$, $n \in \mathbb{N}$, une suite de v.a.r. indépendantes:
+		Autrement dit, la moyenne arithmétique de $X_n$ converge vers l'espérance de $X_1$.\\
+		\item \textbf{Loi forte} :\\
+		Soit $X_n$, $n \in \mathbb{N}$, une suite de v.a.r. indépendantes :
 		\begin{itemize}
 			\item soit de même loi et $E(|X_1|) < \infty$ (critère de Kolmogorov)
 			\item soit de lois quelconques et $\sum\limits_{i}{}\frac{1}{i^2}\sigma^2(X_i) < \infty$
@@ -165,13 +165,13 @@
 		\end{center}
 	\end{itemize}
 	On parle de convergence presque sûre.\\
-	Autrement dit, la moyenne arithmètique de $X_n$ converge, pour presque chaque réalisation, vers l'espèrance $X_1$.
+	Autrement dit, la moyenne arithmétique de $X_n$ converge, pour presque chaque réalisation, vers l'espérance $X_1$.
 \end{itemize}
 
 %%%%%
 \section{Formules utiles}
 \begin{itemize}
-\item \textbf{La fonction gamma}:
+\item \textbf{La fonction gamma} :
 	\begin{itemize}
 		\item $\Gamma(n)=\int\limits_{0}^{+\infty}{t^{n-1}e^{-t}dt}$ où $n > 0$
 		\item $\Gamma(n+1)=n\Gamma(n)$
