@@ -93,22 +93,21 @@
 \begin{itemize}
 	\item Une loi de probabilité est définie par :
 		\[
-			\forall k : P_X\{k\} \ge 0 \quad
+			\forall k : P_X\{k\} \ge 0 \quad\quad
 			\sum\limits_{k=0}^{n}{P_X\{k\}} = 1
 		\]
 	\item \textbf{Loi continue ($\mathbb{R}$)} :
 	\begin{itemize}
 		\item \textbf{Moment d'ordre r} :
-			\[
-				\alpha_r(X) = \int\limits_{\mathbb{R}}{x^rf(x)dx}
-			\]
+			\begin{align*}
+				\alpha_r(X) =& \int\limits_{\mathbb{R}}{x^rf(x)dx} \\
+				\bar{X} =& \alpha_1
+			\end{align*}
 		\item \textbf{Moment centré d'ordre r} :
 			\begin{align*}
 				\mu_r(X) =& \int\limits_{\mathbb{R}}{\left(x-\bar{X}\right)^rf(x)dx} \\
-				\bar{X} =& \alpha_1 \\
-				V=&\mu_2 \\
 				\mu_1 =& 0 \\
-				\mu_2 =& \sigma^2 = \alpha_2 - \alpha_1^2 \\
+				V=\mu_2 =& \sigma^2 = \alpha_2 - \alpha_1^2 \\
 				\mu_3 =& \alpha_3 - 3\alpha_2 \alpha_1 + 2\alpha_1^3
 			\end{align*}
 	\end{itemize}
@@ -162,14 +161,13 @@
 	\end{itemize}
 	Alors,
 	\[
-		Z_n = \frac{\sum\limits_{i=0}^{n}{(x_i-A(X_i))}}{\sigma\sqrt{n}}
+		Z_n = \frac{\sum\limits_{i=0}^{n}{(x_i-E(X_i))}}{\sigma\sqrt{n}}
 	\]
 	est telle que
 	\[
-		P(Z_n \le x) \rightarrow
+		P(Z_n \le x) \underset{n\rightarrow \infty}\longrightarrow
 		\frac1{\sqrt{2\pi}}
 		\int\limits_{-\infty}^{x}{e^{-y^2/2}dy}
-		\text{ quand }n\rightarrow \infty
 	\]
 	\[
 		Z_n \underset{n\to+\infty}{\longrightarrow} N(0,1)
@@ -203,7 +201,7 @@
 	\end{itemize}
 	On parle de convergence presque sûre.
 	Autrement dit, la moyenne arithmétique de $X_n$ converge,
-	pour presque chaque réalisation, vers l'espérance $X_1$.
+	pour presque chaque réalisation, vers l'espérance de $X_1$.
 \end{itemize}
 
 %%%%%
@@ -217,9 +215,9 @@
 		\end{align*}
 \item \textbf{Symétrie et intégrales} :
 	\begin{align*}
-		f(-x) = -f(x) \rightarrow&
+		f(-x) = -f(x) \implies&
 			\int\limits_{-\infty}^{+\infty}{f(x)dx}=0 \\
-		f(-x) = f(x) \rightarrow&
+		f(-x) = f(x) \implies&
 			\int\limits_{-\infty}^{+\infty}{f(x)dx} =
 			2\int\limits_{-\infty}^{0}{f(x)dx} =
 			2\int\limits_{0}^{+\infty}{f(x)dx}
