@@ -79,7 +79,7 @@
 \begin{itemize}
 	\item \textbf{Densité de probabilité} : Une densité de probabilité est une fonction $f$ qui permet de représenter une loi de probabilité sous forme d'intégrale. Elle vérifie deux conditions :
 		\[
-			f(x) \ge 0 \quad \quad
+			\forall x \in \mathbb{R} : f(x) \ge 0 \quad \quad
 			\int\limits_{-\infty}^{+\infty}{f(x)dx}=1
 		\]
 	\item \textbf{Fonction de répartition} : Une fonction de répartition $F_X(x)$ d'une variable aléatoire $X$ représente la loi de probabilité de cette variable aléatoire. Elle est définie comme :
@@ -184,7 +184,7 @@
 		\end{itemize}
 		Alors :
 		\[
-			\lim\limits_{n\rightarrow \infty}
+			\forall \epsilon>0 : \lim\limits_{n\rightarrow \infty}
 			{P\left(\left|\frac{1}{n}\sum\limits_{i}{X_i}-E(X_1)\right|
 			>\varepsilon\right)} = 0
 		\]
